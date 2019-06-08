@@ -1,0 +1,11 @@
+{
+  "extends": "./node_modules/@salesforce/dev-config/tsconfig",
+  "compilerOptions": {
+      "experimentalDecorators": true,
+    "outDir": "./lib",
+    "rootDir": "./src"
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}

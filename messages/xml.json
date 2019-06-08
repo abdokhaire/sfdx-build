@@ -1,0 +1,12 @@
+{
+    "commandDescription": "generate a complete package xml form the specified org",
+    "forceFlagDescription": "force boolean flag",
+    "errorNoOrgResults": "No results found for the org '%s'.",
+    "configFlagDescription": "path to config file",
+    "quickfilterFlagDescription": "csv separated list of metadata type, member or file names to filter on",
+    "excludeManagedFlagDescription": "exclude managed packages from output",
+    "matchCaseFlagDescription": "enable 'match case' for the quickfilter",
+    "matchWholeWordFlagDescription": "enable 'match whole word' for the quickfilter",
+    "fileFlagDescription": "write to 'file' instead of stdout"
+}
+  
