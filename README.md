@@ -4,7 +4,7 @@ sfdx-build
 sfdx plugin for creating a package.xml
 
 [![Version](https://img.shields.io/npm/v/sfdx-build.svg)](https://npmjs.org/package/sfdx-build)
-[![CircleCI](https://circleci.com/gh/abdokhaire/sfdx-build/tree/master.svg?style=shield)](https://circleci.com/gh/abdokhaire/sfdx-build/tree/master)
+[![CircleCI](https://circleci.com/gh/abdokhaire/sfdx-build/tree/master.svg?style=svg)](https://circleci.com/gh/abdokhaire/sfdx-build/tree/master)
 [![Build status](https://ci.appveyor.com/api/projects/status/k3if0g2pe0c0hpw7/branch/master?svg=true)](https://ci.appveyor.com/project/abdokhaire/sfdx-build/branch/master)
 [![Known Vulnerabilities](https://snyk.io/test/github/abdokhaire/sfdx-build/badge.svg)](https://snyk.io/test/github/abdokhaire/sfdx-build)
 [![Downloads/week](https://img.shields.io/npm/dw/sfdx-build.svg)](https://npmjs.org/package/sfdx-build)
