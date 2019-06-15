@@ -44,10 +44,10 @@
   "keywords": [
     "sfdx-plugin",
     "salesforce",
-    "sfdc",
     "sfdx",
     "typescript",
-    "sfdx-build",
+    "sfdx-build-plugin",
+    "cli",
     "oclif"
   ],
   "license": "MIT",
