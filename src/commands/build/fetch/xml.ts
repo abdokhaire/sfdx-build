@@ -21,11 +21,10 @@ export default class Xml extends SfdxCommand {
     `
   ];
 
-  public static args = [{name: 'file'}];
+  public static args = [{ name: 'file' }];
 
   protected static flagsConfig = {
-
-    force: flags.boolean({char: 'f', description: messages.getMessage('forceFlagDescription')}),
+    force: flags.boolean({ char: 'f', description: messages.getMessage('forceFlagDescription') }),
     config: flags.string({ char: 'c', description: messages.getMessage('configFlagDescription') }),
     quickfilter: flags.string({ char: 'q', description: messages.getMessage('quickfilterFlagDescription') }),
     excludemanaged: flags.boolean({ char: 'x', description: messages.getMessage('excludeManagedFlagDescription') })

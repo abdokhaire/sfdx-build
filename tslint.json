@@ -1,4 +1,7 @@
 {
-    "extends": "@salesforce/dev-config/tslint"
+  "extends": "@salesforce/dev-config/tslint-test",
+  "rules": {
+    "variable-name": [true, "allow-leading-underscore"]
   }
+}
   
