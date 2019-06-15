@@ -13,7 +13,7 @@ sfdx plugin for creating a package.xml
 [![License](https://img.shields.io/npm/l/sfdx-build.svg)](https://github.com/abdokhaire/sfdx-build/blob/master/package.json)
 
 <!-- toc -->
-* [Debugging your plugin](#debugging-your-plugin)
+
 <!-- tocstop -->
 
 <!-- install -->
@@ -34,25 +34,39 @@ sfdx plugin for creating a package.xml
 ## Commands
 
 <!-- commands -->
-* [`sfdx-build build:fetch:xml`](#sfdx-collate-collatefetchpackagexml)
+* [`sfdx build:fetch:xml [-f] [-c <string>] [-q <string>] [-x] [-v <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-buildfetchxml--f--c-string--q-string--x--v-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
 
+## `sfdx build:fetch:xml [-f] [-c <string>] [-q <string>] [-x] [-v <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
-## `sfdx-build build:fetch:xml`
-
-Create a package.xml file from a target org
+generate a complete package xml form the specified org
 
 ```
 USAGE
-  $ sfdx-build build:fetch:xml
+  $ sfdx build:fetch:xml [-f] [-c <string>] [-q <string>] [-x] [-v <string>] [-u <string>] [--apiversion <string>] 
+  [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -c, --config=config                             Configuration file to help make pulling metadata more scriptable
-  -q, --quickfilter=quickfilter                   CSV list of metadata types to filter
-  -u, --targetusername=targetusername             username or alias for the target org; overrides default target org
-  -x, --excludemanaged                            Exclude managed packages (and related items) from output
-  --apiversion=apiversion                         override the api version used for api requests made by this command
-  --json                                          format output as json
-  --loglevel=(trace|debug|info|warn|error|fatal)  logging level for this command invocation
+  -c, --config=config                                                               path to config file
+  -f, --force                                                                       force boolean flag
+
+  -q, --quickfilter=quickfilter                                                     csv separated list of metadata type,
+                                                                                    member or file names to filter on
+
+  -u, --targetusername=targetusername                                               username or alias for the target
+                                                                                    org; overrides default target org
+
+  -v, --targetdevhubusername=targetdevhubusername                                   username or alias for the dev hub
+                                                                                    org; overrides default dev hub org
+
+  -x, --excludemanaged                                                              exclude managed packages from output
+
+  --apiversion=apiversion                                                           override the api version used for
+                                                                                    api requests made by this command
+
+  --json                                                                            format output as json
+
+  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
+                                                                                    this command invocation
 
 EXAMPLE
   $ sfdx build:fetch:xml --targetusername myOrg@example.com
@@ -60,5 +74,5 @@ EXAMPLE
        <Package xmlns="http://soap.sforce.com/2006/04/metadata">...</Package>
 ```
 
-_See code: [src/commands/build/fetch/xml.ts](https://github.com/abdokhaire/sfdx-build/blob/master/src/commands/build/fetch/xml.ts)_
+_See code: [src/commands/build/fetch/xml.ts](https://github.com/abdokhaire/sfdx-build/blob/v0.0.0/src/commands/build/fetch/xml.ts)_
 <!-- commandsstop -->

@@ -1,7 +1,7 @@
 {
   "name": "sfdx-build",
   "description": "sfdx plugin for creating a package.xml",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "author": "ahmed @abdokhaire",
   "bugs": "https://github.com/abdokhaire/sfdx-build/issues",
   "dependencies": {
@@ -69,6 +69,7 @@
     "posttest": "tslint -p test -t stylish",
     "prepack": "rm -rf lib && tsc -b && oclif-dev manifest && oclif-dev readme",
     "test": "nyc --extension .ts mocha --forbid-only \"test/**/*.test.ts\"",
+    "test:debug": "mocha --forbid-only \"test/**/*.test.ts\" --inspect --debug-brk",
     "version": "oclif-dev readme && git add README.md"
   }
 }

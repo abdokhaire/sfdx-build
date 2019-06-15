@@ -1,10 +1,9 @@
-import { deserialize, serialize } from 'cerialize';
 import { Connection } from '@salesforce/core';
-import * as convert from 'xml-js';
-import * as xml2js from 'xml2js';
+import { deserialize, serialize } from 'cerialize';
 import * as jf from 'jsonfile';
 import * as _ from 'lodash';
-
+import * as convert from 'xml-js';
+import * as xml2js from 'xml2js';
 
 declare global {
     interface Array<T> {
@@ -25,7 +24,6 @@ if (Symbol['asyncIterator'] === undefined) {
   // tslint:disable-next-line:no-any
   ((Symbol as any)['asyncIterator']) = Symbol.for('asyncIterator');
 }
-
 
 export function xmlToJson(xml: string): JSON {
     const primaryParser = new xml2js.Parser({ explicitArray: false });

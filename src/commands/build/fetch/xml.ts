@@ -1,9 +1,7 @@
 import { flags, SfdxCommand } from '@salesforce/command';
-import { Messages, SfdxError } from '@salesforce/core';
+import { Messages } from '@salesforce/core';
 import { AnyJson } from '@salesforce/ts-types';
-import { isEmpty } from '@salesforce/kit';
 import { BuildConfig, Packagexml } from '../../../util';
-
 
 // Initialize Messages with the current plugin directory
 Messages.importMessagesDirectory(__dirname);
@@ -26,7 +24,7 @@ export default class Xml extends SfdxCommand {
   public static args = [{name: 'file'}];
 
   protected static flagsConfig = {
-    
+
     force: flags.boolean({char: 'f', description: messages.getMessage('forceFlagDescription')}),
     config: flags.string({ char: 'c', description: messages.getMessage('configFlagDescription') }),
     quickfilter: flags.string({ char: 'q', description: messages.getMessage('quickfilterFlagDescription') }),
@@ -41,7 +39,6 @@ export default class Xml extends SfdxCommand {
   protected static requiresProject = false;
 
   public async run(): Promise<AnyJson> {
-    
     // this.org is guaranteed because requiresUsername=true, as opposed to supportsUsername
     const conn = this.org.getConnection();
     const configs: BuildConfig = new BuildConfig(this.flags.config, this.flags);
@@ -50,14 +47,15 @@ export default class Xml extends SfdxCommand {
 
     // Organization will always return one result, but this is an example of throwing an error
     // The output and --json will automatically be handled for you.
-    if (result == null || isEmpty(result) ) {
+
+    /*
+    if ( isEmpty(result) ) {
       throw new SfdxError(messages.getMessage('errorNoOrgResults', [this.org.getOrgId()]));
     }
+    */
 
     console.log(result);
     this.ux.log(result.toString());
     return { result: result.toString() };
   }
 }
-
-
