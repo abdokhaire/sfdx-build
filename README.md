@@ -5,9 +5,9 @@ sfdx plugin for creating a package.xml
 
 [![Version](https://img.shields.io/npm/v/sfdx-build.svg)](https://npmjs.org/package/sfdx-build)
 [![CircleCI](https://circleci.com/gh/abdokhaire/sfdx-build/tree/master.svg?style=shield)](https://circleci.com/gh/abdokhaire/sfdx-build/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/abdokhaire/sfdx-build?branch=master&svg=true)](https://ci.appveyor.com/project/heroku/sfdx-build/branch/master)
-[![Codecov](https://codecov.io/gh/abdokhaire/sfdx-build/branch/master/graph/badge.svg)](https://codecov.io/gh/abdokhaire/sfdx-build)
-[![Greenkeeper](https://badges.greenkeeper.io/abdokhaire/sfdx-build.svg)](https://greenkeeper.io/)
+[![Build status](https://ci.appveyor.com/api/projects/status/k3if0g2pe0c0hpw7/branch/master?svg=true)](https://ci.appveyor.com/project/abdokhaire/sfdx-build/branch/master)
+<!-- [![Codecov](https://codecov.io/gh/abdokhaire/sfdx-build/branch/master/graph/badge.svg)](https://codecov.io/gh/abdokhaire/sfdx-build)  
+[![Greenkeeper](https://badges.greenkeeper.io/abdokhaire/sfdx-build.svg)](https://greenkeeper.io/) -->
 [![Known Vulnerabilities](https://snyk.io/test/github/abdokhaire/sfdx-build/badge.svg)](https://snyk.io/test/github/abdokhaire/sfdx-build)
 [![Downloads/week](https://img.shields.io/npm/dw/sfdx-build.svg)](https://npmjs.org/package/sfdx-build)
 [![License](https://img.shields.io/npm/l/sfdx-build.svg)](https://github.com/abdokhaire/sfdx-build/blob/master/package.json)
