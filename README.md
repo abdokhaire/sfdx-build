@@ -74,5 +74,5 @@ EXAMPLE
        <Package xmlns="http://soap.sforce.com/2006/04/metadata">...</Package>
 ```
 
-_See code: [src/commands/build/fetch/xml.ts](https://github.com/abdokhaire/sfdx-build/blob/v0.0.1/src/commands/build/fetch/xml.ts)_
+_See code: [src/commands/build/fetch/xml.ts](https://github.com/abdokhaire/sfdx-build/blob/v0.0.2/src/commands/build/fetch/xml.ts)_
 <!-- commandsstop -->

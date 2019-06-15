@@ -1,7 +1,7 @@
 {
   "name": "sfdx-build",
   "description": "sfdx plugin for creating a package.xml",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "ahmed @abdokhaire",
   "bugs": "https://github.com/abdokhaire/sfdx-build/issues",
   "dependencies": {
