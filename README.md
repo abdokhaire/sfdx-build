@@ -6,11 +6,12 @@ sfdx plugin for creating a package.xml
 [![Version](https://img.shields.io/npm/v/sfdx-build.svg)](https://npmjs.org/package/sfdx-build)
 [![CircleCI](https://circleci.com/gh/abdokhaire/sfdx-build/tree/master.svg?style=shield)](https://circleci.com/gh/abdokhaire/sfdx-build/tree/master)
 [![Build status](https://ci.appveyor.com/api/projects/status/k3if0g2pe0c0hpw7/branch/master?svg=true)](https://ci.appveyor.com/project/abdokhaire/sfdx-build/branch/master)
-<!-- [![Codecov](https://codecov.io/gh/abdokhaire/sfdx-build/branch/master/graph/badge.svg)](https://codecov.io/gh/abdokhaire/sfdx-build)  
-[![Greenkeeper](https://badges.greenkeeper.io/abdokhaire/sfdx-build.svg)](https://greenkeeper.io/) -->
 [![Known Vulnerabilities](https://snyk.io/test/github/abdokhaire/sfdx-build/badge.svg)](https://snyk.io/test/github/abdokhaire/sfdx-build)
 [![Downloads/week](https://img.shields.io/npm/dw/sfdx-build.svg)](https://npmjs.org/package/sfdx-build)
 [![License](https://img.shields.io/npm/l/sfdx-build.svg)](https://github.com/abdokhaire/sfdx-build/blob/master/package.json)
+
+<!-- [![Codecov](https://codecov.io/gh/abdokhaire/sfdx-build/branch/master/graph/badge.svg)](https://codecov.io/gh/abdokhaire/sfdx-build)  
+[![Greenkeeper](https://badges.greenkeeper.io/abdokhaire/sfdx-build.svg)](https://greenkeeper.io/) -->
 
 <!-- toc -->
 
@@ -74,5 +75,5 @@ EXAMPLE
        <Package xmlns="http://soap.sforce.com/2006/04/metadata">...</Package>
 ```
 
-_See code: [src/commands/build/fetch/xml.ts](https://github.com/abdokhaire/sfdx-build/blob/v0.0.2/src/commands/build/fetch/xml.ts)_
+_See code: [src/commands/build/fetch/xml.ts](https://github.com/abdokhaire/sfdx-build/blob/v0.0.3/src/commands/build/fetch/xml.ts)_
 <!-- commandsstop -->
