@@ -29,7 +29,7 @@ You'll be prompted that this, like any plugin, is not officially code-signed by 
 For CI/CD pipeline or whitelisting didn't work well for you: `echo 'y' | sfdx plugins:install sfdx-build -f`
 
 ## Install from source
-1.Prepare Your Computer for Salesforce CLI Plug-In Development. [Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_plugins.meta/sfdx_cli_plugins/cli_plugins_generate_prepare.htm)
+1. Prepare Your Computer for Salesforce CLI Plug-In Development. [Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_plugins.meta/sfdx_cli_plugins/cli_plugins_generate_prepare.htm)
 2. Clone the repository: `git clone git@github.com:abdokhaire/sfdx-build.git`
 3. Navigate to the project directory: `cd sfdx-build`
 4. Install npm modules: npm install: `npm install`
