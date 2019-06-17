@@ -1,4 +1,4 @@
-sfdx-build
+# sfdx-build
 ==========
 
 sfdx plugin for creating a package.xml
@@ -14,32 +14,36 @@ sfdx plugin for creating a package.xml
 [![Greenkeeper](https://badges.greenkeeper.io/abdokhaire/sfdx-build.svg)](https://greenkeeper.io/) -->
 
 <!-- toc -->
-
 <!-- tocstop -->
 
 <!-- install -->
+# Usage
 
 ## Install from source
 
 1. Install the SDFX CLI.
 2. Clone the repository: `git clone git@github.com:abdokhaire/sfdx-build.git`
-3. Install npm modules: `npm install`
+3. Install npm modules: `npm i sfdx-build`
 4. Link the plugin: `sfdx plugins:link .`
 
 ## Install as plugin
 
 1. Install plugin: `sfdx plugins:install sfdx-build`
 
+You'll be prompted that this, like any plugin, is not officially code-signed by Salesforce. you can [whitelist it](https://developer.salesforce.com/blogs/2017/10/salesforce-dx-cli-plugin-update.html)
+
+For CI/CD pipeline or whitelisting didn't work well for you: `echo 'y' | sfdx plugins:install sfdx-build -f`
+
 <!-- installstop -->
 
-## Commands
+# Commands
 
 <!-- commands -->
 * [`sfdx build:fetch:xml [-f] [-c <string>] [-q <string>] [-x] [-v <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-buildfetchxml--f--c-string--q-string--x--v-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
 
 ## `sfdx build:fetch:xml [-f] [-c <string>] [-q <string>] [-x] [-v <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
-generate a complete package xml form the specified org
+generate a package xml form the specified org using metadata API
 
 ```
 USAGE
@@ -47,30 +51,19 @@ USAGE
   [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
 
 OPTIONS
-  -c, --config=config                                                               path to config file
-  -f, --force                                                                       force boolean flag
-
-  -q, --quickfilter=quickfilter                                                     csv separated list of metadata type,
-                                                                                    member or file names to filter on
-
-  -u, --targetusername=targetusername                                               username or alias for the target
-                                                                                    org; overrides default target org
-
-  -v, --targetdevhubusername=targetdevhubusername                                   username or alias for the dev hub
-                                                                                    org; overrides default dev hub org
-
-  -x, --excludemanaged                                                              exclude managed packages from output
-
-  --apiversion=apiversion                                                           override the api version used for
-                                                                                    api requests made by this command
-
-  --json                                                                            format output as json
-
-  --loglevel=(trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL)  [default: warn] logging level for
-                                                                                    this command invocation
+  -c, --config=config                                     path to config file
+  -f, --force                                             force boolean flag
+  -q, --quickfilter=quickfilter                           csv separated list of metadata type,
+                                                          member or file names to filter on
+  -u, --targetusername=targetusername                     username or alias for the target org; overrides default target org
+  -v, --targetdevhubusername=targetdevhubusername         username or alias for the dev hub org; overrides default dev hub org
+  -x, --excludemanaged                                    exclude managed packages from output
+  --apiversion=apiversion                                 override the api version used for api requests made by this command
+  --json                                                  format output as json
+  --loglevel=(trace|debug|info|warn|error|fatal)          [default: warn] logging level for this command invocation
 
 EXAMPLE
-  $ sfdx build:fetch:xml --targetusername myOrg@example.com
+  $ sfdx build:fetch:xml -u myOrg@example.com
        <?xml version="1.0" encoding="UTF-8"?>
        <Package xmlns="http://soap.sforce.com/2006/04/metadata">...</Package>
 ```
