@@ -95,3 +95,8 @@ $ NODE_OPTIONS=--inspect-brk bin/run build:fetch:xml -f -u myOrg@example.com
 6. Hit the green play button at the top middle of VS Code (this play button will be to the right of the play button that you clicked in step #5).
 <br><img src=".images/vscodeScreenshot.png" width="480" height="278"><br>
 Congrats, you are debugging!
+
+## Uninstall the plugin
+```
+sfdx plugins:uninstall sfdx-build
+```
