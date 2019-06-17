@@ -24,7 +24,7 @@ sfdx plugin for creating a package.xml
 1. Install the SFDX CLI. [Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_install_cli.htm)
 2. Install plugin: `sfdx plugins:install sfdx-build`
 
-You'll be prompted that this, like any plugin, is not officially code-signed by Salesforce. you can [whitelist it] (https://developer.salesforce.com/blogs/2017/10/salesforce-dx-cli-plugin-update.html)
+You'll be prompted that this, like any plugin, is not officially code-signed by Salesforce. you can [whitelist it](https://developer.salesforce.com/blogs/2017/10/salesforce-dx-cli-plugin-update.html)
 
 For CI/CD pipeline or whitelisting didn't work well for you: `echo 'y' | sfdx plugins:install sfdx-build -f`
 
