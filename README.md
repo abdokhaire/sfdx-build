@@ -85,7 +85,7 @@ $ sfdx build:fetch:xml -u myOrg@example.com --dev-suspend
   
 Alternatively, to call your command using the `bin/run` script, set the `NODE_OPTIONS` environment variable to `--inspect-brk` when starting the debugger:
 ```sh-session
-$ NODE_OPTIONS=--inspect-brk bin/run build:fetch:xml -f -u myOrg@example.com
+$ NODE_OPTIONS=--inspect-brk bin/run build:fetch:xml -u myOrg@example.com
 ```
 
 2. Set some breakpoints in your command code
