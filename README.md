@@ -39,7 +39,7 @@ For CI/CD pipeline or whitelisting didn't work well for you: `echo 'y' | sfdx pl
 # Commands
 
 <!-- commands -->
-* [`sfdx build:fetch:xml [-f] [-c <string>] [-q <string>] [-x] [-v <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`](#sfdx-buildfetchxml--f--c-string--q-string--x--v-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfataltracedebuginfowarnerrorfatal)
+* [`sfdx build:fetch:xml [-f] [-c <string>] [-q <string>] [-x] [-v <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal]`](#sfdx-buildfetchxml--f--c-string--q-string--x--v-string--u-string---apiversion-string---json---loglevel-tracedebuginfowarnerrorfatal)
 
 ## `sfdx build:fetch:xml [-f] [-c <string>] [-q <string>] [-x] [-v <string>] [-u <string>] [--apiversion <string>] [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]`
 
@@ -48,7 +48,7 @@ generate a package xml form the specified org using metadata API
 ```
 USAGE
   $ sfdx build:fetch:xml [-f] [-c <string>] [-q <string>] [-x] [-v <string>] [-u <string>] [--apiversion <string>] 
-  [--json] [--loglevel trace|debug|info|warn|error|fatal|TRACE|DEBUG|INFO|WARN|ERROR|FATAL]
+  [--json] [--loglevel trace|debug|info|warn|error|fatal]
 
 OPTIONS
   -c, --config=config                                     path to config file
