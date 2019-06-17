@@ -53,8 +53,7 @@ USAGE
 OPTIONS
   -c, --config=config                                     path to config file
   -f, --force                                             force boolean flag
-  -q, --quickfilter=quickfilter                           csv separated list of metadata type,
-                                                          member or file names to filter on
+  -q, --quickfilter=quickfilter                           csv separated list of metadata type, member or file names to filter on
   -u, --targetusername=targetusername                     username or alias for the target org; overrides default target org
   -v, --targetdevhubusername=targetdevhubusername         username or alias for the dev hub org; overrides default dev hub org
   -x, --excludemanaged                                    exclude managed packages from output
