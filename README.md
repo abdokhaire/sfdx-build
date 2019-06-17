@@ -32,7 +32,7 @@ For CI/CD pipeline or whitelisting didn't work well for you: `echo 'y' | sfdx pl
 1. Prepare Your Computer for Salesforce CLI Plug-In Development. [Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_plugins.meta/sfdx_cli_plugins/cli_plugins_generate_prepare.htm)
 2. Clone the repository: `git clone git@github.com:abdokhaire/sfdx-build.git`
 3. Navigate to the project directory: `cd sfdx-build`
-4. Install npm modules: npm install: `npm install`
+4. Install npm modules: `npm install`
 5. Link the plugin: `sfdx plugins:link`
 6. [Debugging your plugin](#debugging-your-plugin)
 
