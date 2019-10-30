@@ -53,7 +53,6 @@ export default class Xml extends SfdxCommand {
     }
     */
 
-    console.log(result);
     this.ux.log(result.toString());
     return { result: result.toString() };
   }
